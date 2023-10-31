@@ -1,3 +1,5 @@
+import './globals.css';
+
 export const metadata = {
     title: 'Contact',
     description: 'Home page',
@@ -6,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>Welcome to the contact page{children}</body>
+      <body suppressHydrationWarning>Welcome to the contact page{children}</body>
     </html>
   )
 }

@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Nav from './Nav'
+import { MyContext } from '@/Helper/Context'
 
 const Header = (props) => {
-
+const user= useContext(MyContext);
     
   return (
-    <div className='headerStyle'>It is the Header component.
-
-        <Nav num={props.num} />
+    <div className='headerStyle'>I{user}
+       
     </div>
   )
 }

@@ -36,19 +36,37 @@
 
 // export default page
 
+// "use client";
+// import Header from '@/Components/Header';
+// import React, { useState } from 'react'
+
+
+// const page = () => {
+//   const [num, setNum] = useState(10)
+
+//   return (
+//     <div>
+//       <Header num={num} />
+//     </div>
+//   )
+// }
+
+// export default page;
+
 "use client";
 import Header from '@/Components/Header';
-import React, { useState } from 'react'
-
+import { MyContext } from '@/Helper/Context';
+import React, { useContext } from 'react'
 
 const page = () => {
-  const [num, setNum] = useState(10)
-
+    const user = useContext(MyContext)
+    
+    
   return (
-    <div>
-      <Header num={num} />
+    <div>{user}
+      <Header/>
     </div>
   )
 }
 
-export default page;
+export default page

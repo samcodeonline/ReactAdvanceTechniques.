@@ -1,5 +1,5 @@
 "use client";
-import React, { createContext } from 'react'
+import React, { createContext } from 'react';
 export const MyContext = createContext();
 
 const Context = ({children}) => {
@@ -13,4 +13,4 @@ const Context = ({children}) => {
   )
 }
 
-export default Context
+export default Context;

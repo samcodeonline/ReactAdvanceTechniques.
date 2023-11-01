@@ -53,18 +53,49 @@
 
 // export default page;
 
+// "use client";
+// import Header from '@/Components/Header';
+// import { MyContext } from '@/Helper/Context';
+// import React, { useContext } from 'react'
+
+// const page = () => {
+//     const user = useContext(MyContext)
+    
+    
+//   return (
+//     <div>{user}
+//       <Header/>
+//     </div>
+//   )
+// }
+
+// export default page
 "use client";
-import Header from '@/Components/Header';
-import { MyContext } from '@/Helper/Context';
-import React, { useContext } from 'react'
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 const page = () => {
-    const user = useContext(MyContext)
-    
-    
+  const notify = () => {
+    toast.warn('Error!!', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+  }
   return (
-    <div>{user}
-      <Header/>
+    <div>
+      <button
+      onClick={notify}
+      className='btnStyle'>Click here</button>
+
+      <ToastContainer/>
     </div>
   )
 }

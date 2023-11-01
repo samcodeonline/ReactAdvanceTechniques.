@@ -1,4 +1,3 @@
-
 // "use client";
 // import axios from 'axios'
 // import React, { useEffect, useState } from 'react'
@@ -12,14 +11,13 @@
 //   useEffect(() => {
 //     getUsers()
 //   }, [])
-  
+
 //   return (
 //     <>
 
-
 //     {/* <a href='/Contact'>Contact</a> */}
 
-//     <button 
+//     <button
 //     onClick={getUsers}
 //     className='btnData'>Get data</button>
 //     <div className='dataDiv'>
@@ -40,7 +38,6 @@
 // import Header from '@/Components/Header';
 // import React, { useState } from 'react'
 
-
 // const page = () => {
 //   const [num, setNum] = useState(10)
 
@@ -60,8 +57,7 @@
 
 // const page = () => {
 //     const user = useContext(MyContext)
-    
-    
+
 //   return (
 //     <div>{user}
 //       <Header/>
@@ -70,34 +66,67 @@
 // }
 
 // export default page
-"use client";
-import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+// "use client";
+// import React from 'react';
+// import { ToastContainer, toast } from 'react-toastify';
 
-import 'react-toastify/dist/ReactToastify.css';
+// import 'react-toastify/dist/ReactToastify.css';
 
-const page = () => {
-  const notify = () => {
-    toast.warn('Error!!', {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-      });
-  }
-  return (
-    <div>
-      <button
-      onClick={notify}
-      className='btnStyle'>Click here</button>
+// const page = () => {
+//   const notify = () => {
+//     toast.warn('Error!!', {
+//       position: "top-center",
+//       autoClose: 5000,
+//       hideProgressBar: false,
+//       closeOnClick: true,
+//       pauseOnHover: true,
+//       draggable: true,
+//       progress: undefined,
+//       theme: "dark",
+//       });
+//   }
+//   return (
+//     <div>
+//       <button
+//       onClick={notify}
+//       className='btnStyle'>Click here</button>
 
-      <ToastContainer/>
-    </div>
-  )
-}
+//       <ToastContainer/>
+//     </div>
+//   )
+// }
 
-export default page
+// export default page
+// "use client";
+// import axios from "axios";
+// import React, { useState } from "react";
+
+// const page = () => {
+//   const [userdata, setUserdata] = useState("");
+//   const [num, setNum] = useState(10);
+//   const getData = async () => {
+//     const response = await axios.get("https://picsum.photos/v2/list");
+//     const a = JSON.stringify(response.data);
+//     console.log(a);
+//     setUserdata(a);
+//   };
+//   return (
+//     <div>
+//       <button onClick={getData} className="btnStyle">
+//         Click
+//       </button>
+//       <br />
+//       {userdata}
+//     </div>
+//   );
+// };
+
+// export default page;
+
+import React from "react";
+
+const Deployment = () => {
+  return <div>Deployment</div>;
+};
+
+export default Deployment;
